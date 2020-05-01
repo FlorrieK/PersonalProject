@@ -1,0 +1,17 @@
+##Color Palette:
+  dark background color: #080712
+  light background color: #c7b843
+  title color: #887f03
+  subtitle color: #bea81e
+  nav bar color: #4b6146
+
+##Text:
+  title: font-family: 'Merriweather', serif;
+  about: font-family: 'Merriweather', serif;
+  subtitles: font-family: 'Merriweather', serif;
+  default: font-family: 'Merriweather', serif;
+
+##Media:
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap" rel="stylesheet">
+font-family: 'Merriweather', serif;

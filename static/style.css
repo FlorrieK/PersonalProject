@@ -1,6 +1,127 @@
 * {
 
-  padding: 0;
+  padding: 10px;
   margin: 0;
+
+}
+
+ul, a {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  color: #4b6146;
+  font-size: 20px;
+
+}
+
+body {
+
+  font-family: 'Merriweather', serif;
+
+}
+
+.home-body {
+
+  background-image: url("BackgroundImg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+.abouttheartist-body {
+
+  background-image: url("ArtistBackgroundImg.jpg");
+  background-size: cover;
+
+}
+
+.aboutthewebdesigner-body {
+
+  background-image: url("WebDesignerBackgroundImg.jpg");
+  background-size: cover;
+
+}
+
+.indexgallery-body {
+
+  background-image: url("indexgalleryImg.jpg");
+  background-size: cover;
+
+}
+
+button {
+
+  padding: 10px;
+
+}
+
+.welcome {
+
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+p, .wb {
+
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+
+}
+
+a.navbar-brand {
+
+  height: 120px;
+
+}
+
+.ArtistImg1 {
+
+  height: 400px;
+  text-align: center;
+  padding: 0px;
+  border: 5px solid white;
+
+}
+
+.WebDesignerImg {
+
+  height: 400px;
+  padding: 0px;
+  border: 5px solid white;
+
+}
+
+.ArtistText {
+
+  padding: 50px
+
+}
+
+.align-right {
+
+  text-align: right;
+
+}
+
+.align-left {
+
+  text-align: left;
+
+}
+
+.align-center {
+
+  text-align: center;
+}
+
+.GalleryImg {
+
+  width: 100%;
+  border: 5px solid white;
+  padding: 0px;
+  margin: 10px;
 
 }

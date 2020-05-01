@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <div class = "row">
+
+    <div class = "col-xs-10 col-md-12">
+      <form action="" method="POST">
+        {{ form.hidden_tag() }}
+
+        <legend class = "border-bottom">
+          Login
+        </legend>
+
+        <div class="form-group">
+
+          <!-- form label with css class -->
+          {{ form.email.label(class = "form-control-label") }}
+          <!-- check if error is present -->
+          {% if form.email.errors %}
+            {{ form.email(class = "form-control form-control-lg is-invalid") }}
+            <!-- create a div with an error message for the user -->
+            <div class = "invalid-feedback">
+              <!-- loop to display all errors -->
+              {% for error in form.email.errors %}
+                <span>{{ error }}</span>
+              {% endfor %}
+            </div>
+          {% else %}
+              <!-- no errors were found, therefore show default input box -->
+            {{ form.email(class = "form-control form-control-lg is-invalid") }}
+          {% endif %}
+
+        </div>
+
+        <div class = "form-group">
+          {{ form.password.label(class = "form-control-label") }}
+          <!-- create a label, check if an error is present -->
+          {% if form.password.errors %}
+            <!-- error was found, therefore add class is-invalid tp input box -->
+            {{ form.password(class = "form-control form-control-lg is-invalid") }}
+            <!-- create a div to display all the error messages -->
+            <div class = "invalid-feedback">
+              {% for error in form.password.errors %}
+                <span>{{ error }}</span>
+              {% endfor %}
+            </div>
+          {% else %}
+            <!-- no error was found, therefore print basic input box -->
+            {{ form.password(class = "form-control form-control-lg is-invalid") }}
+          {% endif %}
+        </div>
+
+        <div class = "form-group">
+          {{ form.username.label(class = "form-control-label") }}
+          <!-- create a label, check if an error is present -->
+          {% if form.username.errors %}
+            <!-- error was found, therefore add class is-invalid tp input box -->
+            {{ form.username(class = "form-control form-control-lg is-invalid") }}
+            <!-- create a div to display all the error messages -->
+            <div class = "invalid-feedback">
+              {% for error in form.username.errors %}
+                <span>{{ error }}</span>
+              {% endfor %}
+            </div>
+          {% else %}
+            <!-- no error was found, therefore print basic input box -->
+            {{ form.username(class = "form-control form-control-lg is-invalid") }}
+          {% endif %}
+        </div>
+
+        <div class = "form-group">
+          {{ form.submit(class ="btn btn-outline-info") }}
+        </div>
+
+        <h6 class = "text-muted">
+          <a href="{{ url_for('register') }}">Forgot Password?</a>
+        </h6>
+      </form>
+
+    </div>
+    <div class = "col-xs-10">
+        <h6 class = "text-muted">
+          Need An Account? <a href="{{ url_for('register') }}"> Sign Up Now </a>
+        </h6>
+    </div>
+
+  </div>
+
+{% endblock content %}
